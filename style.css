@@ -701,6 +701,18 @@ section { padding: 60px 20px; }
   color: #fff;
   transform: scale(1.2);
 }
+/* Autofill Fix */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #222 inset !important;
+  -webkit-text-fill-color: #ddd !important;
+  caret-color: #fff;
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 /* Footer */
 footer { text-align: center; padding: 20px; background: #111; }
